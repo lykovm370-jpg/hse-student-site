@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Я - студент ВШЭ</title>
+    <style>
+        /* Небольшие стили для красоты (CSS), хотя в задании упор на HTML */
+        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header, footer { background-color: #003366; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #0055a5; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; } /* [cite: 26] Стилизация ссылок */
+        main { padding: 20px; max-width: 800px; margin: auto; background: white; }
+        img { max-width: 200px; border-radius: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body> <header>
+        <h1>Личная страница студента</h1> </header>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="contact.html">Обратная связь</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Приветствую!</h2>
+            <figure>
+                <img src="gc.jpg" alt="Фото Максима Лыкова">
+                <figcaption>Лыков Максим Сергеевич</figcaption>
+            </figure>
+
+            <article> <h3>Обо мне</h3>
+                <p> Я учусь в <abbr title="Национальный исследовательский университет «Высшая школа экономики»">НИУ ВШЭ</abbr>.
+                    Мой факультет — <b>МИЭМ</b> (Московский институт электроники и математики). 
+                    </p>
+                
+                <h3>Учебная программа</h3>
+                <ul>
+                    <li>Программа: <span>Прикладная математика</span></li>
+                    <li>Текущий статус: Студент</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h3>Мои ключевые навыки</h3>
+            <table>
+                <caption>Уровень владения технологиями</caption>
+                <thead> <tr> <th>Навык</th> <th>Уровень</th>
+                    </tr>
+                </thead>
+                <tbody> <tr>
+                        <td>HTML/CSS</td> <td>Базовый</td>
+                    </tr>
+                    <tr>
+                        <td>Математический анализ</td>
+                        <td>Продвинутый</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Лыков Максим. НИУ ВШЭ.</p>
+    </footer>
+
+</body>
+</html>
