@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Обратная связь</title>
+    <link rel="stylesheet" href="style.css">
+    
     <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header, footer { background-color: #003366; color: white; padding: 20px; text-align: center; }
-        nav { background-color: #0055a5; padding: 10px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        main { padding: 20px; max-width: 600px; margin: auto; background: white; }
-        form { margin-top: 20px; }
-        div { margin-bottom: 15px; } /* [cite: 32] Блочный элемент div для отступов */
-        label { display: block; margin-bottom: 5px; font-weight: bold; }
-        input, select, textarea { width: 100%; padding: 8px; box-sizing: border-box; }
-        button { background-color: #003366; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        button { 
+            background-color: #003366; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 5px;
+            width: 100%;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0055a5;
+        }
     </style>
 </head>
 <body>
@@ -33,27 +38,22 @@
             <p>Если у вас есть вопросы по учебе или предложения, напишите мне.</p>
 
             <form action="#" method="GET">
-                
-                <fieldset>
-                    <legend>Контактная информация</legend>
+                <fieldset style="margin-bottom: 20px; border-color: #003366;"> <legend>Контактная информация</legend>
 
-                    <div>
-                        <label for="name">Ваше имя:</label>
+                    <div style="margin-bottom: 15px;"> <label for="name">Ваше имя:</label>
                         <input type="text" id="name" name="username" placeholder="Иван Иванов" required>
                     </div>
 
-                    <div>
+                    <div style="margin-bottom: 15px;">
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="useremail" placeholder="example@hse.ru">
                     </div>
                 </fieldset>
 
-                <br>
-
-                <fieldset>
+                <fieldset style="margin-bottom: 20px; border-color: #003366;">
                     <legend>Сообщение</legend>
                     
-                    <div>
+                    <div style="margin-bottom: 15px;">
                         <label for="topic">Тема вопроса:</label>
                         <select id="topic" name="topic">
                             <option value="math">Прикладная математика</option>
@@ -62,7 +62,7 @@
                         </select>
                     </div>
 
-                    <div>
+                    <div style="margin-bottom: 15px;">
                         <label for="message">Текст сообщения:</label>
                         <textarea id="message" name="message" rows="5"></textarea>
                     </div>
@@ -71,12 +71,11 @@
                 <div>
                     <button type="submit">Отправить сообщение</button>
                 </div>
-
             </form>
         </section>
 
-        <aside>
-            <h4>Контакты кафедры:</h4>
+        <aside style="background-color: #eee; padding: 15px; margin-top: 30px; border-radius: 5px;">
+            <h4 style="margin-top: 0;">Контакты кафедры:</h4>
             <dl>
                 <dt>Адрес:</dt>
                 <dd>г. Москва, Таллинская ул., д. 34</dd>
