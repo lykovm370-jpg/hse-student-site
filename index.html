@@ -9,7 +9,6 @@
         .highlight {
             background-color: #ffffcc;
         }
-        /* Применение модификатора !important */
         .important-text {
             color: darkred !important;
             font-weight: bold;
@@ -82,5 +81,20 @@
         <p>&copy; 2026 Лыков Максим. НИУ ВШЭ.</p>
     </footer>
 
+    <div class="chat-widget">
+        <div id="chat-header">Чат с Максимом (Свернуть)</div>
+        <div id="chat-body">
+            <div id="chat-messages">
+                <div class="chat-msg bot">Привет! Напиши мне или отправь голосовое.</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Сообщение...">
+                <button id="chat-voice-btn" title="Записать голосовое">🎤</button>
+                <button id="chat-send-btn">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
