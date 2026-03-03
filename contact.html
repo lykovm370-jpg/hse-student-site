@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Обратная связь</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     
     <style>
         button { 
@@ -38,9 +39,11 @@
             <p>Если у вас есть вопросы по учебе или предложения, напишите мне.</p>
 
             <form action="#" method="GET">
-                <fieldset style="margin-bottom: 20px; border-color: #003366;"> <legend>Контактная информация</legend>
+                <fieldset style="margin-bottom: 20px; border-color: #003366;"> 
+                    <legend>Контактная информация</legend>
 
-                    <div style="margin-bottom: 15px;"> <label for="name">Ваше имя:</label>
+                    <div style="margin-bottom: 15px;"> 
+                        <label for="name">Ваше имя:</label>
                         <input type="text" id="name" name="username" placeholder="Иван Иванов" required>
                     </div>
 
@@ -82,6 +85,7 @@
                 <dt>Email:</dt>
                 <dd>miem@hse.ru</dd>
             </dl>
+            <div id="map" style="height: 300px; border-radius: 5px; margin-top: 15px;"></div>
         </aside>
     </main>
 
@@ -89,5 +93,21 @@
         <p>&copy; 2026 Лыков Максим. МИЭМ.</p>
     </footer>
 
+    <div class="chat-widget">
+        <div id="chat-header">Чат с Максимом (Свернуть)</div>
+        <div id="chat-body">
+            <div id="chat-messages">
+                <div class="chat-msg bot">Привет! Напиши мне или отправь голосовое.</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Сообщение...">
+                <button id="chat-voice-btn" title="Записать голосовое">🎤</button>
+                <button id="chat-send-btn">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="script.js"></script>
 </body>
 </html>
